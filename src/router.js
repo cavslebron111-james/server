@@ -3,7 +3,7 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Signup from './views/Signup.vue';
 import Login from './views/Login.vue';
-import Dashboard from './views/dashboard.vue';
+import dashboard from './views/dashboard.vue';
 
 Vue.use(Router);
 
@@ -46,7 +46,7 @@ export default new Router({
     {
       path: '/dashboard',
       name: 'dashboard',
-      component: Dashboard,
+      component: dashboard,
       beforeEnter: isLoggedIn,
     },
   ],
